@@ -1,0 +1,57 @@
+{
+  //include 配置  指定哪些被编译的ts文件   ** 表示文件夹  * 表示ts文件
+  "include": [
+    "./src/**/*"  //src目录下的全部文件都被编译
+  ],
+  //exclude 指定哪些ts文件不被编译
+  "exclude": [
+    "./src/index/**/*"  //index下的文件不被编译
+  ],
+  // compilerOptions 对ts编译器进行配置
+  "compilerOptions": {
+    //target 指定ts被编译成哪个版本的 ES
+    "target": "ES2015",
+
+    //module  指定模块化的规范
+    "module": "ES2015",
+
+    //lib 指定要使用的库
+    // "lib": []
+
+    //outDir 指定被编译后的文件存放在哪个文件夹
+    "outDir": "./dist",
+
+    //outFile 将全局作用域的文件编译并合并一个文件中
+    // "outFile": "./dist/app.js",
+
+    // allowJs 是否对js文件进行编译 默认值是false
+    "allowJs": false,
+
+    // checkJs  是否以ts规范来 检查 js 代码  默认值是false
+    "checkJs": false,
+
+    //noEmit 不生编译后的文件 默认值为false
+    "noEmit": false,
+
+    //onEmitOnError 有错误时是否生成编译后会的文件 
+    "noEmitOnError": true,
+
+    //removeComments 是否编译后生成不带有注释的文件
+    "removeComments": false,
+
+    //所有严格检查的开关
+    "strict": true,
+
+    // 编译后的文件 是否开启严格模式
+    "alwaysStrict": true,
+
+    //不允许存在 隐式any
+    "noImplicitAny": true,
+
+    //不允许存在不明确类型的 this
+    "noImplicitThis": true,
+
+    // 严格检查空值
+    "strictNullChecks": true,
+  }
+}
