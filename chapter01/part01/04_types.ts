@@ -51,7 +51,7 @@ k = {name:'梁兆浩', age: 21, gender: Gender.male};
 let l: {name:string} & {age: number};
 l = {name:'a',age: 123};
 
-// 类型的别名
+// 类型的别名  type
 type myType = 1 | 2 | 3 | 4;
 let n:myType;
 n = 1;
